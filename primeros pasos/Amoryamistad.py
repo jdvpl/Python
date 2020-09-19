@@ -27,4 +27,4 @@ if((novia=="N")and(Soledad=="N")):
     print("Sr(a) ",Nombre, "Tienes no tienes novia(o) y estas solo te jodiste lol ")
 if((novia=="N")and(Soledad=="S")):
     print("Sr(a)",Nombre," deberias decirle lo que sientes quizas se enamore de ti")
-print("Felicidades")
+
