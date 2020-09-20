@@ -22,5 +22,7 @@ print(num2)
 nombre="Juan Daniel Suarez"
 Profesion="Full Stack Developer"
 Web="Jdvpl.com"
-
+# con el mas identifica tipod de datos y no deja espacio
 print("Nombre: "+nombre+ " es un "+ Profesion+ " y su Sitio web es: "+Web)
+#con la coma no identifica el tipo de dato y deja el espacio es mejor
+print("Nombre",nombre,"es",Profesion,"Su sitio web es",Web)
