@@ -20,4 +20,4 @@ print(f"La division de {num1} / {num2} es: {divi}")
 print(f"La division exacta de {num1} / {num2} es: {divisonexacta}")
 #modulo
 #division
-print(f"La el resto de la dicion de {num1} y {num2} es: {resto_modulo}")
+print(f"La el resto de la dicion de {num1} y {num2} es: {resto_modulo}")  #es mejor con print f
