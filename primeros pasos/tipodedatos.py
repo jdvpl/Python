@@ -4,7 +4,7 @@ print(nada)
 #mostrando tipo de dato
 print(type(nada))
 #tipo de dato String o cadena
-Nombre="Hola soy un maldtio insecto1"
+Nombre="Hola soy desarrollador de MisionTic 2022"
 print(Nombre)
 print(type(Nombre))
 #tipo de dato entero
