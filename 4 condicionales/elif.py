@@ -21,11 +21,34 @@
 #or o
 #! negacion
 #not no
-print(f"########################## elif ####################")
-edad=int(input("Introduce la edad "))
-edad_minima=18
-edad_maxima=65
-if edad>=edad_minima and edad<=edad_maxima:
-    print(f"esta en edad de trabajar")
+# print(f"########################## elif ####################")
+# edad=int(input("Introduce la edad "))
+# edad_minima=18
+# edad_maxima=65
+# if edad>=edad_minima and edad<=edad_maxima:
+#     print(f"esta en edad de trabajar")
+# else:
+#     print("no esta en edad de trabajar")
+
+#mas ejemplos con condicionales
+# print(f"########################## condicional con or ####################")
+# pais=input("Introduce el pais ")
+
+# if pais=="colombia" or pais=="españa" or pais=="mexico":
+#     print(f"{pais} es un pais de habla hispana")
+# else:
+#     print(f"no es un pais de habla hispana")
+
+# print(f"########################## condicionales con not ####################")
+# pais=input("Introduce el pais ")
+# if not (pais=="colombia" or pais=="españa" or pais=="mexico"):
+#     print(f"{pais} No es un pais de habla hispana")
+# else:
+#     print(f"{pais} es un pais de habla hispana")
+
+print(f"########################## condicionales con !=####################")
+pais=input("Introduce el pais ")
+if (pais!="colombia" and pais!="españa" and pais!="mexico"):
+    print(f"{pais} No es un pais de habla hispana")
 else:
-    print("no esta en edad de trabajar")
+    print(f"{pais} es un pais de habla hispana")
