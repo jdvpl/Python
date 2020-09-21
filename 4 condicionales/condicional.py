@@ -34,3 +34,4 @@ if edad>=18:
         print(f"Es americano y de la ciudad {ciudad}")
 else:
     print(f"Eres un guipa jejeje")
+    
