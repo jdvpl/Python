@@ -9,3 +9,4 @@ Tabla(numero)
     
 for numero_tabla in range(1,numero+1):
     Tabla(numero_tabla)
+

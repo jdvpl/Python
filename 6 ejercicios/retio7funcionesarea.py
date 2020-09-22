@@ -4,7 +4,7 @@ def rectangulo(a,b):
     return a*b
 def circulo(r):
     return pi*r**2
-
+    
 sumaTotal=0
 a1=float(input("ingrese el valor uno "))
 b1=float(input("ingrese el valor dos "))
