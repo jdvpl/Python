@@ -35,3 +35,9 @@ print(cantantes[1:4]) #imprime los de la posicion 1 al 4 menos una posicion osea
 print(cantantes[1:])#todos los que hay apartir de la posicon 1
 print(cantantes[:2]) #todos los anteriores a la posicion 2 osea el 0 y el 1
 
+# añadir elementos a una lista
+cantantes.append("aerosmith")
+cantantes.append("linkin park")
+cantantes.append("shisu kane")
+
+print(cantantes)
