@@ -39,5 +39,21 @@ print(cantantes[:2]) #todos los anteriores a la posicion 2 osea el 0 y el 1
 cantantes.append("aerosmith")
 cantantes.append("linkin park")
 cantantes.append("shisu kane")
+peliculas.append("los simpson")
 
 print(cantantes)
+
+nueva=""
+while nueva != "parar":
+    print("\nsi no quieres mas peliculas digita parar\n ")
+
+    nueva=input("Introduce mas peliculas ") 
+    if nueva !="parar": #para que no instroduzca parar en la pelicula
+        peliculas.append(nueva)
+
+
+
+# recorreindo y mostrando una lista
+print("\n\n############## Liatado de peliculas ##############")
+for x in peliculas:
+    print(f"{peliculas.index(x)+1}: {x}")   #.index saca el indice de la pelicula
