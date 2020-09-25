@@ -7,8 +7,6 @@ Salida
 El día en el cual la población contagiada del país B supera la del país A
 
 """
-import math
-
 while True:
     try:
         n=int(input("Ingresa la cantidad de infectados del pais A "))
