@@ -1,5 +1,6 @@
 # libreria para abrir un archivo
 from io import open
+import shutil
 # para las rutas
 import pathlib
 
@@ -15,3 +16,12 @@ archivo=open(ruta,"a+")
 archivo.write("******************Soy un texto metidos desde python kisamado*********\n")
 # cerrar archivo
 archivo.close()
+
+#copiar un archivo
+ruta_original=str(pathlib.Path().absolute()) + "/13sistema_archivos/texto.txt"
+ruta_nueva=str(pathlib.Path().absolute()) + "/13sistema_archivos/texto_nuevo_copiados.txt"
+ruta_alternativa=str(pathlib.Path().absolute()) + "/6 ejercicios/texto_nuevo_copiados.txt"
+shutil.copyfile(ruta_original,ruta_alternativa)
+print(ruta_alternativa)
+
+    
