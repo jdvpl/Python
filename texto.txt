@@ -1,3 +1,4 @@
+#con este texto no se le paso la ruta /13sistema_archivos
 
 ******************Soy un texto metidos desde python *********
 ******************Soy un texto metidos desde python *********
