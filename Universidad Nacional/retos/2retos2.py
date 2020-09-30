@@ -73,7 +73,7 @@ if total > 150000 and total<=300000:
     descuento=total*0.1
     pago=total-descuento
 elif total>300000 and total<=700000:
-    descuento=total-total*0.15
+    descuento=total*0.15
     pago=total-descuento
 elif total>700000:
     descuento=total*0.2
