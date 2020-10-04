@@ -12,4 +12,17 @@ def mcd(a,b):
     else:
         return mcd(minimo,maximos%minimo)
 
-print(mcd(1550,12))
+# def main():
+
+
+amplificado=input("ingrese numero '/':")
+numerador,denominador=amplificado.split("/")
+a=int(numerador)
+b=int(denominador)
+
+x=a/mcd(a,b)
+y=b/mcd(a,b)
+
+print(f"{int(x)}/{int(y)}")
+
+print(mcd(a,b))
