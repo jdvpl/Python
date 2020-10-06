@@ -1,0 +1,28 @@
+**Interpretación del reto 3 en lenguaje natural**
+
+Definir variable bandera como True, y definir listas vacías nombre_productos, cantidad y precio
+Mientras la bandera sea True (While) (Tip: Revisar refacil-bueno.py en 14-listas)
+	El usuario ingresa cadena de caracteres (input): 1&Chocolatinas Cohete&3&300
+	Convertir cadena de caracteres a lista con split. El separador es “&”: comando_en_lista = [‘1’,’Chocolatinas Cohete’,’3’,’300’]
+	Validar qué comando es. Puede ser 1, 2 o 3. Se hace validando que carácter es el elemento comando_en_lista[0]. Se evalúa si es ‘1’, o si es ‘2’, o si es ‘3’ (usando if y elif)
+	En caso de que el comando sea ‘1’: Guarda los datos de artículo, cantidad y precio unitario. Agrego elementos a las listas nombre_productos, cantidad, precio.
+	 	nombre_productos.append(comando_en_lista[1])
+	 	cantidad.append(comando_en_lista[2])
+	 	precio.append(comando_en_lista[3])
+		return True (Tip:  Revisar refacil-bueno.py en 14-listas en la parte que hay varios return)
+	En caso de que el comando sea ‘2’:
+		imprimir encabezado quemado
+		imprimir cliente. Aquí se usa comando_en_lista[1]
+		imprimir línea quemada “Art Cant Precio”
+		imprimir una línea por cada producto ingresado (for). Antes de la cantidad se debe imprimir una 'x'. Recuerda calcular el precio total de cada producto.
+			Ejm: Chocolatinas Cohete x3 $900
+		Calcular el total con descuento. Recuerda, que para sumar precios sería útil utilizar sum(precios). Puedes reutilizar lo que ya programaste de descuentos.
+		Imprimir líneas de "Total: " y "En esta compra tu descuento fue "
+		Imprimir el final de la tirilla quemado (Gracias por tu compra y ---)
+		Vaciar listas de nombre_productos, cantidad y precio para que queden disponibles para recibir productos  de una nueva compra
+	 	return True (Tip:  Revisar refacil-bueno.py en 14-listas en la parte que hay varios return)
+	En caso de que el comando sea ‘3’:
+		return False (Tip:  Revisar refacil-bueno.py en 14-listas en la parte que hay varios return)
+		
+NOTA: Puede ser que en esta explicación en lenguaje natural no se especifiquen ciertos detalles, pero seguro que si falta algo, es algo que hemos visto en las monitorías. 
+Solo debes utilizar el conocimiento ya adquirido y tu lógica para entender que llegase a faltar.
