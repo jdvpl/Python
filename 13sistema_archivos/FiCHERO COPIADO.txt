@@ -1,2 +1,0 @@
-hola insectos
-******************Soy un texto metidos desde python kisamado*********

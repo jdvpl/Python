@@ -23,7 +23,7 @@ archivo.write(f"{x}\n")
 # otra forma de leer y guardarlo en lista
 
 lista=archivo.readlines()
-archivo.close()
+
 
 print(lista)
 for x in lista:
@@ -35,3 +35,4 @@ for x in lista:
 ruta_alternativa=str(pathlib.Path().absolute()) + "/archivos/texto_nuevo.txt" #copiando a otra ruta
 # print(ruta_alternativa)
 shutil.copyfile(ruta,ruta_alternativa)
+archivo.close()
