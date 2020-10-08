@@ -1,6 +1,6 @@
 from io import open
 
-archivo=open("archivos/sempo.txt","r+") #creando un archivo
+archivo=open("archivos/sempo.txt","a+") #creando un archivo
 
 cuantas=int(input("Cuantas veces quieres escribir "))
 
