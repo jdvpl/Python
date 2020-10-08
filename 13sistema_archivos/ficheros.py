@@ -36,9 +36,16 @@ ruta_nueva=str(pathlib.Path().absolute()) + "/13sistema_archivos/FiCHERO COPIADO
 
 shutil.move(ruta_original,ruta_nueva)
 """
-ruta_nueva=str(pathlib.Path().absolute()) + "/13sistema_archivos/FiCHERO COPIADO.txt "
-ruta_nueva1=str(pathlib.Path().absolute()) + "/13sistema_archivos/renombrado.txt "
-os.remove(ruta_nueva)
+# ruta_nueva=str(pathlib.Path().absolute()) + "/13sistema_archivos/FiCHERO COPIADO.txt "
+# os.remove(ruta_nueva)
 
+ruta1=os.path.abspath("./archivos/sempo.txt")
+ruta2=os.path.abspath("../")
+
+# comprobar si existe un archivo
+if os.path.isfile(ruta1):
+    print("ecisladjf")
+else:
+    print("no existe")
 
 archivo.close()
