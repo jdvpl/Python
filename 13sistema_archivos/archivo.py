@@ -9,6 +9,8 @@ ruta=str(pathlib.Path().absolute()) + "/13sistema_archivos/texto.txt"
 # abre el archibo con permiso de lectura read
 archivo=open(ruta,"r+")
 
+x=input("Ingrese un texto al archivo: ")
+archivo.write(f"{x}\n")
 # leer contenido del archivo
 # contenido=archivo.read()
 # print(contenido) #muesta el contenido directamente

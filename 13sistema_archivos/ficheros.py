@@ -23,7 +23,7 @@ ruta_alternativa=str(pathlib.Path().absolute()) + "/6 ejercicios/texto_nuevo_cop
 shutil.copyfile(ruta_original,ruta_alternativa)
 print(ruta_alternativa)
 """
-# mover un archivo
+# mover un archivo lo renombra
 ruta_original=str(pathlib.Path().absolute()) + "/13sistema_archivos/texto.txt"
 ruta_nueva=str(pathlib.Path().absolute()) + "/13sistema_archivos/FiCHERO COPIADO.txt "
 
