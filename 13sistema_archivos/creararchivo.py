@@ -1,14 +1,22 @@
 from io import open
 
-archivo=open("13sistema_archivos/texto.txt","a+") #creando un archivo
+archivo=open("archivos/sempo.txt","r+") #creando un archivo
 
-cuantas=int(input("Cuantas veces quieres escribier "))
+cuantas=int(input("Cuantas veces quieres escribir "))
 
-
-for i in range(cuantas+1):
+for i in range(1,cuantas+1):
     lol=input("escribre algo en el archivo: ")
-    archivo.write(f"{lol}\n") 
-    texto=archivo.readlines()
-    print(texto)
+    archivo.write(f"{lol}\n")
+    
 
 archivo.close()
+
+lols=open("archivos/sempo.txt","r+")
+texto=lols.readlines()
+for s in texto:
+    print(s,end="")
+
+
+
+
+
