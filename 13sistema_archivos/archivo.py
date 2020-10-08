@@ -11,6 +11,7 @@ ruta=str(pathlib.Path().absolute()) + "/13sistema_archivos/texto.txt"
 archivo=open(ruta,"r+")
 
 x=input("Ingrese un texto al archivo: ")
+
 archivo.write(f"{x}\n")
 # leer contenido del archivo
 # contenido=archivo.read()
@@ -27,9 +28,10 @@ archivo.close()
 print(lista)
 for x in lista:
     # if not x.isnumeric(): si es numerico
-    lista_frase=x.split() #para colocar cada frase o en una lsita
+    lista_frase=x.split() #para colocar cada frase o en una lista diviendolo con el espaciado
     print(lista_frase)
     print(x.upper())
 
-ruta_alternativa=str(pathlib.Path().absolute()) + "/6 ejercicios/texto_nuevo_copiados.txt" #copiando a otro lado
+ruta_alternativa=str(pathlib.Path().absolute()) + "/archivos/texto_nuevo.txt" #copiando a otra ruta
+# print(ruta_alternativa)
 shutil.copyfile(ruta,ruta_alternativa)
