@@ -3,6 +3,7 @@
 from io import open
 # para las rutas
 import pathlib
+import shutil
 
 # especificar ruta
 ruta=str(pathlib.Path().absolute()) + "/13sistema_archivos/texto.txt"
@@ -29,4 +30,6 @@ for x in lista:
     lista_frase=x.split() #para colocar cada frase o en una lsita
     print(lista_frase)
     print(x.upper())
- 
+
+ruta_alternativa=str(pathlib.Path().absolute()) + "/6 ejercicios/texto_nuevo_copiados.txt" #copiando a otro lado
+shutil.copyfile(ruta,ruta_alternativa)
