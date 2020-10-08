@@ -36,10 +36,9 @@ def main():
         total=0
 
         for producto_actual in lista_compras:
-            print(producto_actual)
             cantidad=lista_compras[producto_actual]
             precio=supermercado[producto_actual]
             total_producto=cantidad*precio
             total=total+total_producto
-        print("{:.2f}".format(total))
+        print(f"{'{:.2f}'.format(total)}")  #para imprimir con dos decimales
 main()
