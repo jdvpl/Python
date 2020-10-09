@@ -1,4 +1,4 @@
-import os
+import os,shutil
 
 # crear una carpeta
 carpeta=os.path.abspath("./13sistema_archivos")
@@ -17,3 +17,10 @@ try:
     os.rmdir(carpeta+cosito+cual)
 except:
     print("la carpeta no existe")
+
+
+# copiar directorios
+ruta_original=os.path.abspath("./13sistema_archivos/micarpeta")
+ruta_nueva=os.path.abspath("./13sistema_archivos/micarpeta_COPIADA")
+
+shutil.copytree(ruta_original,ruta_nueva)
