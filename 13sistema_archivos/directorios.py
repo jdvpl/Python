@@ -34,9 +34,19 @@ archivo.write(f"Hola insecto creando el archivo: {nombre_archivo} ")
 print(ruta)
 """
 
+print("\nContenido de la Carpeta: \n")
+contenido=os.listdir("./13sistema_archivos")
+for con in contenido:
+    print(con)
+print()
 
-
-ruta_original=os.path.abspath("./13sistema_archivos/micarpeta")
+ver=input("Ver el contenido de la carpeta: ")
+ver2=os.listdir("./13sistema_archivos/"+ver)
+for ss in ver2:
+    print(ss)
+    
+capeta_vieja=input("nombre de la carpeta a mover: ")
+ruta_original=os.path.abspath("./13sistema_archivos/"+capeta_vieja)
 nombre_caprte=input("Indique el nombre de la carpeta: ")
 ruta_nueva=os.path.abspath("./13sistema_archivos/"+nombre_caprte)
 # renombrando carpeta
