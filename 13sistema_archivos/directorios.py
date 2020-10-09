@@ -26,10 +26,19 @@ ruta_nueva=os.path.abspath("./13sistema_archivos/micarpeta_COPIADA")
 
 shutil.copytree(ruta_original,ruta_nueva)
 """
-
+""" agregando archvos por medi ode la consola
 nombre_archivo=input("indique el nombre del archivo con la extension: ")
 ruta=os.path.abspath("./archivos/"+nombre_archivo)
 archivo=open(ruta,"a+")
-print(ruta)
-
 archivo.write(f"Hola insecto creando el archivo: {nombre_archivo} ")
+print(ruta)
+"""
+
+
+
+ruta_original=os.path.abspath("./13sistema_archivos/micarpeta")
+nombre_caprte=input("Indique el nombre de la carpeta: ")
+ruta_nueva=os.path.abspath("./13sistema_archivos/"+nombre_caprte)
+# renombrando carpeta
+shutil.move(ruta_original,ruta_nueva)
+
