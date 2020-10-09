@@ -2,9 +2,18 @@ import os
 
 # crear una carpeta
 carpeta=os.path.abspath("./13sistema_archivos")
-carpeta_nueva="\micarpeta"
-print(carpeta+carpeta_nueva)
-if not os.path.isdir(carpeta+carpeta_nueva):
-    os.mkdir(carpeta+carpeta_nueva)
+carpeta_nueva=input("Digite el nombre de la carpeta a crear: ")
+cosito="\\"
+print(carpeta+cosito+carpeta_nueva)
+if not os.path.isdir(carpeta+cosito+carpeta_nueva):
+    os.mkdir(carpeta+cosito+carpeta_nueva)
 else:
     print("ya existe")
+
+
+# eliminar directorio
+try:
+    cual=input("Cual carpeta deseas eliminar: ")
+    os.rmdir(carpeta+cosito+cual)
+except:
+    print("la carpeta no existe")
