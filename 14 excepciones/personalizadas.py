@@ -24,4 +24,5 @@ if s=="s" or s=="S":
         print(i)
 else:
     print(f"Gracias por estar aqui! {nombre}")
+    print(f"Gracias por estar aqui! {nombre}")
 
