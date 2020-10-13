@@ -33,5 +33,37 @@ class Persona:
         return f"{self.getNombre()} is sleeping ...☻♥♠•◘○♠"
 
 
+# here
+class Programador(Persona):
+    """
+    lenguajes
+    experiencia
+    """
+    def __init__(self):
+        self.lenguajes="HTML, CSS JavaScript, PHP"
+        self.experiencia=3
 
+    def aprender(self,lenguajes):
+        self.lenguajes=lenguajes
+        return self.lenguajes
+
+    def getLenguajes(self):
+        return self.lenguajes
+
+    def setExperiencia(self,experiencia):
+        self.experiencia=experiencia
+    def getExpeiencia(self):
+        return self.experiencia
     
+    def programar(self):
+        return "Estoy programando"
+    def reparar(self):
+        return "He reparado tu laptop"
+class TecnicoRedes(Programador):
+    def __init__(self):
+        # con este metodo asigna los valores de la clase padre (programador)
+        super().__init__()
+        self.auditarRedes='experto'
+        self.experiencia=15 
+    def auditoria(self):
+        return "estoy auditando una red"
