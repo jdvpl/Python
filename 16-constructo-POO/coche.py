@@ -7,6 +7,9 @@ class Coche:
     velocidad=300
     caballaje=500
     plazas=2
+    # porppieda publica
+    rapido="si, es publico" #este se muestra fuera de la clase
+    __soy_privado="estibuto privado" #este no se muestra en el objeto
 
     # definir el constructor
     def __init__(self,color,marca,modelo,velocidad,caballaje,plazas):
@@ -19,6 +22,8 @@ class Coche:
 
 
     # metodos que hace el objeto setters y getter
+    def getPrivado(self):
+        self.__soy_privado
     
     def setColor(self,color): 
         self.color=color

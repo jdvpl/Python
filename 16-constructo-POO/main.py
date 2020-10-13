@@ -12,3 +12,7 @@ if type(carro2)==Coche:
     print("Es un objeto correcto")
 else:
     print("No es un objeto")
+
+# visibilidad public o private en la clase
+print(carro.getPrivado())
+print(carro1.rapido)
