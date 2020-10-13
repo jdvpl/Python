@@ -1,0 +1,18 @@
+#instalar mongo
+pip install pymongo
+#instalar requests
+pip install requests
+#instalar djongo
+pip install djongo
+#instalar virtualenv
+pip install virtualenv
+
+#crear una appp en django
+django-admin startproject nombre_proyecto
+#migra
+python manage.py migrate
+#correr el srvidor
+python manage.py runserver
+#crear appp
+python manage.py startapp myapp
+
