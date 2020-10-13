@@ -45,9 +45,9 @@ def Pagina(request):
         <p>Creado por Juan Daniel Suarez</p>
     """
     return HttpResponse(layout+html+footer)
-def contacto(request):
-    html="""
-        <center><h2>Pagina de contacto</h2></center>
+def contacto(request,nombre="kakaroto"):
+    html=f"""
+        <center><h2>Pagina de contacto de {nombre}</h2></center>
         <p>Creado por Juan Daniel Suarez</p>
     """
     return HttpResponse(layout+html+footer)
