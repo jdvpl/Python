@@ -8,7 +8,9 @@ def index(request):
     <ul>
     """
     year=2021
-    while year
+    while year <=2050:
+        hmtl+=f"<li>{year}</li>"
+        year+=1
 
     hmtl+="</ul>"
     return HttpResponse(hmtl)
