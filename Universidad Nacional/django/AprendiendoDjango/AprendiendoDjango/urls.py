@@ -21,7 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name="index"),
     path('inicio/',views.index,name="index"),
-    path('hola-mundo',views.HolaMundo,name="HolaMundo"),
-    path('pagina-prueba',views.Pagina,name="pagina"),
+    path('hola-mundo/',views.HolaMundo,name="HolaMundo"),
+    path('pagina-prueba/',views.Pagina,name="pagina"),
+    path('contacto/',views.contacto,name="contacto"),
 
 ]
