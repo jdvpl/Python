@@ -32,6 +32,7 @@ col=db['personas']
 # col.insert_many([diccionarios(nombre,edad,lenguajes,hobbies),diccionarios(nombre1,edad1,lenguajes1,hobbies1)])
 
 #*imprimiendo los datos que hay en una colleccion
+print("Imprimendo todos".center(100))
 i=1
 for dato in col.find({}):
     print(f"----------Dato Nª {i}---------------")
@@ -45,3 +46,27 @@ for dato in col.find({}):
         print(hobbie,end=", ")
     print("\n")
     i+=1
+
+num=int(input("Ingrese el intervalo: "))
+print(f"Imprimendo los datos donde la edad es mayor a {num}".center(100))
+v=1
+for dato in col.find({
+    "edad":{
+        "$gt":num
+    }
+}):
+    print(f"----------Dato Nª {v}---------------")
+    print(f"Nombre: {dato['nombre']}")
+    print(f"Edad: {dato['edad']}")
+    print(f"Lenguajes: ",end="")
+    for lenguaje in dato['lenguajes']:
+        print(lenguaje,end=", ")
+    print("\nHobbies:",end="")
+    for hobbie in dato['hobbies']:
+        print(hobbie,end=", ")
+    print("\n")
+    v+=1
+#!borrar documentos col.delete_one(uno) delete_many(varios) con la consicion que se le pase
+col.delete_many({
+    "edad":29
+})
