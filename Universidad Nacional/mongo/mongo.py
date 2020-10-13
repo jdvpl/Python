@@ -29,8 +29,9 @@ lenguajes1=input("Ingresa los lenguajes separados por una ',': ").split(",")
 hobbies1=input("Ingresa tus hobbies separados por una ',': ").split(",")
 
 #!insertando varios documentos a la base de datos
-# print([diccionarios(nombre,edad,lenguajes,hobbies),diccionarios(nombre1,edad1,lenguajes1,hobbies1)])
 col.insert_many([diccionarios(nombre,edad,lenguajes,hobbies),diccionarios(nombre1,edad1,lenguajes1,hobbies1)])
 
-# para saber cuantos documentos hay en la coleccion
-print(col.count_documents({}))
+#*imprimiendo los datos que hay en una colleccion
+for dato in col.find({}):
+    print(dato)
+
