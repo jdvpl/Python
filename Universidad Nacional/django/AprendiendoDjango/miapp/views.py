@@ -23,8 +23,7 @@ footer="""
 """
 def index(request):
     hmtl="""
-    <h1>Inicio</h1>
-    <p>años hasta el 2050</p>
+
     <ul>
     """
     year=2021
@@ -33,7 +32,7 @@ def index(request):
         year+=1
 
     hmtl+="</ul>"
-    return HttpResponse(layout+hmtl+footer)
+    return render(request,'index.html')
 def HolaMundo(request):
     html="""
         <h1> Hola insectos</h1>
