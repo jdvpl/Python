@@ -1,4 +1,4 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render,HttpResponse,redirect
 
 # Create your views here.
 layout="""
@@ -39,7 +39,9 @@ def HolaMundo(request):
         <h1> Hola insectos</h1>
         <h3>Hola Soy Juan Daniel Suarez</h3>"""
     return HttpResponse(layout+html+footer)
-def Pagina(request):
+def Pagina(request,redirigir=0):
+    if redirigir==1:
+        return redirect('/contacto/JIren Manuel/Suarez')
     html="""
         <h2>Django</h2>
         <p>Creado por Juan Daniel Suarez</p>
