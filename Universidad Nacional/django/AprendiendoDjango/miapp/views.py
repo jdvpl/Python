@@ -41,7 +41,7 @@ def HolaMundo(request):
     return HttpResponse(layout+html+footer)
 def Pagina(request,redirigir=0):
     if redirigir==1:
-        return redirect('/contacto/JIren Manuel/Suarez')
+        return redirect('contacto',nombre="lucifer",apellido="satanas")
     html="""
         <h2>Django</h2>
         <p>Creado por Juan Daniel Suarez</p>
