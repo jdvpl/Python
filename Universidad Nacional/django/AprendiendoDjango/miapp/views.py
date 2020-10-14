@@ -45,9 +45,14 @@ def Pagina(request):
         <p>Creado por Juan Daniel Suarez</p>
     """
     return HttpResponse(layout+html+footer)
-def contacto(request,nombre="kakaroto"):
+def contacto(request,nombre="juan",apellido="suarez"):
     html=f"""
-        <center><h2>Pagina de contacto de {nombre}</h2></center>
-        <p>Creado por Juan Daniel Suarez</p>
+        
+        
     """
+    if nombre and apellido:
+        html+=f"<center><h2>Pagina de contacto de {nombre} {apellido}</h2></center>"
+    else:
+        html+=f"<center><h2>Pagina de contacto</h2></center>"
+    html+="<p>Creado por Juan Daniel Suarez</p>"
     return HttpResponse(layout+html+footer)
