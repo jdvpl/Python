@@ -2,28 +2,13 @@ from django.shortcuts import render,HttpResponse,redirect
 
 # Create your views here.
 layout="""
-<h2>Sitio web con Django | Juan Daniel Suarez</h2>
-<hr/>
 
-<ul>
-    <li><a href="/">Inicio</a></li>
-    <li><a href="/hola-mundo">Hola Mundo</a></li>
-    <li><a href="/pagina-prueba">Pagina</a></li>
-    <li><a href="/contacto">Contacto</a></li>
-</ul>
-<hr/>
 """
 footer="""
-<hr/>
-<center><h2>Contacto</h2></center>
-<hr/>
-<b>Nombre: </b> <p>Juan Daniel Suarez</p>
-<b>Telefono: </b> <p>3209188638</p>
-<b>Email: </b> <p>juanda554242@gmail.com</p>
+
 """
 def index(request):
     hmtl="""
-
     <ul>
     """
     year=2021
@@ -34,18 +19,12 @@ def index(request):
     hmtl+="</ul>"
     return render(request,'index.html')
 def HolaMundo(request):
-    html="""
-        <h1> Hola insectos</h1>
-        <h3>Hola Soy Juan Daniel Suarez</h3>"""
-    return HttpResponse(layout+html+footer)
+    return render(request,'hola_mundo.html')
 def Pagina(request,redirigir=0):
     if redirigir==1:
         return redirect('contacto',nombre="lucifer",apellido="satanas")
-    html="""
-        <h2>Django</h2>
-        <p>Creado por Juan Daniel Suarez</p>
-    """
-    return HttpResponse(layout+html+footer)
+    
+    return render(request,'pagina.html')
 def contacto(request,nombre="juan",apellido="suarez"):
     html=f"""
         
