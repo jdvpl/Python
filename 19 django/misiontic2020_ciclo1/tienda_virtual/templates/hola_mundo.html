@@ -1,0 +1,21 @@
+<!--!importante para que lea el layout la hereda  -->
+{% extends 'layout.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title%}
+            Hola Mundo
+        {% endblock %}
+    </title>
+</head>
+<body>
+    {% block content %}
+    {{block.super}}  <!-- !carga los datos del padre layouts-->
+    <h1> Hola insectos</h1>
+    <h3>Hola Soy Juan Daniel Suarez</h3>
+    {% endblock%}
+</body>
+</html>

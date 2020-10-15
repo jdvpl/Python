@@ -1,0 +1,19 @@
+{% extends 'layout.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title%}
+            Pagina
+        {% endblock %}
+    </title>
+</head>
+<body>
+    {% block content %}
+    <h2>Django</h2>
+    <p>Creado por Juan Daniel Suarez</p>
+    {% endblock%}
+</body>
+</html>
