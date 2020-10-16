@@ -2,17 +2,22 @@ body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: #666;
+	color: #111111;
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
+	font-size: 15px;
+}
+.div {
+	margin: auto 0;
+	font-size: 15px;
 }
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0 0 20px 0;
 	font-weight: 700;
 	font-size: 32px;
-	color: #333;
+	color: #AAAAAA;
 }
 h3 {
 	font-family: 'Montserrat', sans-serif;
@@ -189,7 +194,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	opacity: 1;
 }
 label {
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 	float: left;
@@ -209,7 +214,7 @@ color: #777;
 
 form {
 	letter-spacing: 1px;
-	color: #000000;
+	color: #111111;
 }
 form input , select, textarea{
 	margin-top: 10px;
@@ -296,3 +301,5 @@ form table tr td{
 .error-message{
 	margin-top: 20px;
 }
+
+
