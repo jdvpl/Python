@@ -20,3 +20,5 @@ lista_inicial = [
     {'nombre': "Sofá", 'costo': 450000},
     {'nombre': "Alcancia", 'costo': 15000}
 ]
+ids_ = db_tienda_virtual.productos.insert_many(lista_inicial)
+print(ids_)
