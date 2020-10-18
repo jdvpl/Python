@@ -37,6 +37,7 @@ def historial(request):
         temp['metodo'] = document['metodo_pago']
         temp['observaciones'] = document['observaciones']
         temp['direccion'] = document['direccion']
+
         historial.append(temp)
         contador += 1
 

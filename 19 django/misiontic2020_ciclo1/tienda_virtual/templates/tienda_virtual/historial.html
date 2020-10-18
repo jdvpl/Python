@@ -8,30 +8,33 @@
         <div class="section-title">
             <h2>Historial de Compras</h2>
         </div>	
-        <div align="center">
-            <table width="1000px" class="table_results">
-                <tr>	
-                    <td class="table_results"><b>No. Compra</b></td>
-                    <td class="table_results"><b>Productos</b></td>
-                    <td class="table_results"><b>Nombre</b></td>
-                    <td class="table_results"><b>Fecha</b></td>
-                    <td class="table_results"><b>Dirección de Env&iacute;o</b></td>
-                    <td class="table_results"><b>Costo</b></td>
-                    <td class="table_results"><b>M&eacute;todo de Pago</b></td>
+
+            <table class="mt-2 table table-responsive-lg table-hover table-bordered">
+            <thead>
+                <tr class="bg-dark text-white text-center">
+                    <td><b>No. Compra</b></td>
+                    <td><b>Productos</b></td>
+                    <td><b>Nombre</b></td>
+                    <td><b>Fecha</b></td>
+                    <td><b>Dirección de Env&iacute;o</b></td>
+                    <td><b>Costo</b></td>
+                    <td><b>M&eacute;todo de Pago</b></td>
+                    <td><b>Comentarios</b></td>
                 </tr>
+            </thead>
                 {% for compra in historial %}
-                    <tr class="table_results"> 
-                        <td align="center" class="table_results">{{ compra.numero }}</td>
-                        <td class="table_results">{{ compra.productos }}</td>
-                        <td class="table_results">{{ compra.nombre }}</td>
-                        <td class="table_results">{{ compra.fecha }}</td>
-                        <td class="table_results">{{ compra.direccion }}</td>
-                        <td class="table_results">{{ compra.costo }}</td>
-                        <td class="table_results">{{ compra.metodo }}</td>
+                    <tr> 
+                        <td>{{ compra.numero }}</td>
+                        <td>{{ compra.productos }}</td>
+                        <td>{{ compra.nombre }}</td>
+                        <td>{{ compra.fecha }}</td>
+                        <td>{{ compra.direccion }}</td>
+                        <td>{{ compra.costo }}</td>
+                        <td>{{ compra.metodo }}</td>
+                        <td>{{ compra.observaciones }}</td>
                     </tr>
                 {% endfor %}
             </table>
-        </div>
         
     </div>
     </div>
