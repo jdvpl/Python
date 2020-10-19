@@ -8,9 +8,9 @@
         <div class="section-title">
             <h2>Carrito de Compras</h2>
         </div>	
-        <div align="center">
-            <table width="500px" class="table_results">
-                <tr>	
+
+            <table width="500px" class="table table-responsive-xl table-hover table-bordered">
+                <tr class="bg-secondary text-white font-weight-bold">	
                     <td><b>Producto</b></td>
                     <td><b>Costo</b></td>
                     <td><b>Cantidad</b></td>
@@ -25,10 +25,9 @@
                 {% endfor %}
             </table>
         </div>
-        <div align="center">
-            <br>
-            <a href='/portal_pagos/'><input type="button" tabindex="7" value="Pagar" id="btnPay" name="btnPay"></a>
-        </div>
+
+            <a href='/portal_pagos/'><input type="button" class="btn btn-outline-primary btn-block" value="Pagar" id="btnPay" name="btnPay"></a>
+
         
     </div>
     </div>
