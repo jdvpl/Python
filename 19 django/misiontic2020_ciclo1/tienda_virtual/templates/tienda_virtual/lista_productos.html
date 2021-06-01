@@ -4,43 +4,39 @@
 {% block content %}
 <div class="container">
     <div class="col-md-12">
-    <div class="row">
-        <div class="section-title">
-            <h2>Lista de Productos</h2>
-        </div>	
-    </div>
+        <div class="row">
+            <div class="section-title">
+                <h2>Lista de Productos</h2>
+            </div>
+        </div>
     </div>
 </div>
-    <div class="row">
+<div class="row">
 
-        <div class="col-md-6">
-            <table width="200px" class="table table-striped">
-                <tr>	
-                    <td class="table_results"><b>Producto</b></td>
-                    <td><b>Costo</b></td>
-                </tr>
-                
-                {% for producto in productos %}
-                    <tr class="table_results"> 
-                        <td  class="table_results">{{ producto.nombre }}</td>
-                        <td>{{ producto.costo }}</td>
-                    </tr>
-                {% endfor %}
-            </table>
-        </div>
-        <div class="col-md-6 pl-5">
-            <form method="POST" class="form-control">
-                {% csrf_token %}
-                {{ frm_agregar.as_p}}
-                <input type="submit" value="Agregar" id="btnAdd" name="btnAdd" class="btn btn-danger">
-            </form>
+    <div class="col-md-6">
+        <table width="200px" class="table table-striped">
+            <tr>
+                <td class="table_results"><b>Producto</b></td>
+                <td><b>Costo</b></td>
+            </tr>
 
-        </div>
+            {% for producto in productos %}
+            <tr class="table_results">
+                <td class="table_results">{{ producto.nombre }}</td>
+                <td>{{ producto.costo }}</td>
+            </tr>
+            {% endfor %}
+        </table>
     </div>
+    <div class="col-md-6 pl-5">
+        <form method="POST" class="form-control">
+            {% csrf_token %}
+            {{ frm_agregar.as_p}}
+            <input type="submit" value="Agregar" id="btnAdd" name="btnAdd" class="btn btn-danger">
+        </form>
 
-       
     </div>
-
-      
+</div>
+</div>
 
 {% endblock %}
