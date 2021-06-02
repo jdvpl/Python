@@ -1,0 +1,3 @@
+correr mongoDb con mongoD
+pararse en la carpeta donde esta el entorno 19 django y correrÑ
+python manage.py runserver
